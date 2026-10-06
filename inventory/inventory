@@ -1,0 +1,19 @@
+[frontend]
+52.4.47.165
+54.159.172.200
+
+[frontend1]
+52.4.47.165
+[backend]
+54.172.169.175
+
+[balanceador]
+34.236.79.86
+
+[nfs]
+107.23.16.172
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/Proyecto_Olga_Valle/olga_valle.pem
+ansible_ssh_common_args='-o StrictHostKeyChecking=accept-new'       

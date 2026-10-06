@@ -1,0 +1,34 @@
+ip:
+    frontend_private_ip: "172.31.%" 
+    BACKEND_PRIVATE_IP: "172.31.29.189"
+
+db:
+    name: wordpress
+    user: wordpress
+    password: password
+    
+certbot:
+    email: otrousuario@gmail.es
+    domain: olgaworpress.myddns.me
+
+
+
+wordpress:
+  directory: /var/www/html
+  domain: "https://olgaworpress.myddns.me"
+  title: "Mi Sitio WordPress"
+  admin_user: "admin"
+  admin_password: "password"
+  admin_email: "admin@example.com"
+  hide_login_url: "sitioescondido"
+  locale: es_ES
+
+nfsserver: 
+    server_ip: "172.31.19.135"
+
+nfscliente:
+    client_ip: "172.31.0.0/16"
+
+balanceador:
+    IP_FRONTEND_1: "172.31.18.219"
+    IP_FRONTEND_2: "172.31.26.4"
